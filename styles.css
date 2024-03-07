@@ -49,9 +49,15 @@ body {
 
 .close-popup {
     transition: visibility 0.5s, transform 0.5s ease-out;
+    
 }
 
 .blur {
     backdrop-filter: blur(15px);
-    transition: backdrop-filter 0.5s ease-in-out;
+    transition: backdrop-filter 0.5s ease-out;
+}
+
+.noblur{
+    backdrop-filter: blur(0px);
+    transition: backdrop-filter 0.5s ease-out;
 }

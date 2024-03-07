@@ -24,14 +24,15 @@
       function openPopup() {
         popup.classList.add("open-popup");
         blurBackground.classList.add("blur");
+        blurBackground.classList.remove("noblur");
       }
 
       function closePopup() {
         popup.classList.remove("open-popup")
         popup.classList.add("close-popup");
+        blurBackground.classList.add("noblur");
         blurBackground.classList.remove("blur");
       }
-      
     </script>
   </body>
 </html>
