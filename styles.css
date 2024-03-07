@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(https://images.unsplash.com/photo-1552872673-9b7b99711ebb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+                center/cover no-repeat fixed;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.popup {
+    width: 300px;
+    height: 100px;
+    border: 6px double black;
+    background-color: #5cdb95;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-around; 
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    transition: visibility 0s, transform 0.5s ease-in-out;
+}
+
+.close-popup {
+    transition: visibility 0.5s, transform 0.5s ease-out;
+}
+
+.blur {
+    backdrop-filter: blur(15px);
+    transition: backdrop-filter 0.5s ease-in-out;
+}
